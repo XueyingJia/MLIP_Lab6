@@ -20,9 +20,13 @@ pipeline {
 
                 # TODO Complete the command to run pytest
                 # sudo /PATH/TO/CONDA run -n <Envinronment Name> <Command you want to run>
+                cd /home/tean06
+                source mlip/bin/activate
+                cd /lab6/MLIP_Lab6
+                pytest
 
-                echo 'pytest not runned'
-                exit 1 #comment this line after implementing Jenkinsfile
+                // echo 'pytest not runned'
+                // exit 1 #comment this line after implementing Jenkinsfile
                 '''
 
             }
